@@ -9,6 +9,8 @@ import {
 import { NgBrazilValidators, MASKS } from 'ng-brazil';
 import { Location } from '@angular/common';
 
+import { LoadingService } from '../../../shared/loading/loading.service';
+
 @Component({
   selector: 'app-prefeitura',
   templateUrl: './prefeitura.component.html',

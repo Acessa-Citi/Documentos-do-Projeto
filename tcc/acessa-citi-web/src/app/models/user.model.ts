@@ -21,7 +21,15 @@ export class User{
 }
 
 export interface UserAuth{
+    uid?: string,
     email: string,
-    urlProfileIsLoged: boolean;
-    uid?: string;
+    emailVerified?: boolean,
+    displayName: string,
+    photeUrl?: string,
+    ativo?: boolean,
+    contaLoged: boolean
+}
+
+export interface UserCredential{
+
 }
