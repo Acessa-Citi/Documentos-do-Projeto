@@ -1,0 +1,30 @@
+nav#menu {
+    margin-left: 1000px;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav#menu li{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: #dddddd;
+}
+
+nav#menu li:hover{
+    background-color: black;
+    transition: 3s;
+}
+
+nav#menu a{
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    transform: 2s;
+    color: white;
+    text-decoration: underline;
+}

@@ -1,0 +1,34 @@
+
+<div class="loginStyle">
+
+<form [formGroup]="loginFormControl" novalidate (ngSubmit)="onLoginSubmit()">
+    <mat-card>
+        <mat-card-content class="formulario">
+         <ul>
+
+        <li><mat-form-field>
+                <input matInput type="text" placeholder="Usuário" formControlName="loginCtrl">
+                <mat-error *ngIf="loginFormControl.controls['loginCtrl'].hasError('required')">
+                    Necessário nome de usuário
+                </mat-error>
+            </mat-form-field></li>
+
+        <li><mat-form-field>
+                <input matInput type="password" placeholder="Senha" formControlName="passwordCtrl">
+                <mat-error *ngIf="loginFormControl.controls['passwordCtrl'].hasError('required')">
+                    Necessário digitar uma senha valida</mat-error>
+            </mat-form-field></li>
+         </ul>
+
+        <li>   
+        <li></mat-card-content>
+        <div id="alinhamentoButton">
+        <mat-card-actions>
+            <button mat-raised-button color="primary" type="submit">Logar</button>
+            <button mat-raised-button color="primary" type="reset">Esquece a Senha</button>
+        </mat-card-actions>
+        </div>
+    </mat-card>
+</form>
+
+</div>

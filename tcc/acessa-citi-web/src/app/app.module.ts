@@ -1,42 +1,43 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+import { MatSliderModule } from '@angular/material/slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { SpinnerComponent } from './shared/spinner.component';
-import { AprovarDenunciaComponent } from './dialogs/aprovar-denuncia/aprovar-denuncia.component';
-import { DeferirDenunciaComponent } from './dialogs/deferir-denuncia/deferir-denuncia.component';
-import { DetalhesDenunciaComponent } from './dialogs/detalhes-denuncia/detalhes-denuncia.component';
-import { DetalhesPrefeituraComponent } from './dialogs/detalhes-prefeitura/detalhes-prefeitura.component';
-import { DetalhesCoordenadorComponent } from './dialogs/detalhes-coordenador/detalhes-coordenador.component';
-import { DetalhesModeradorComponent } from './dialogs/detalhes-moderador/detalhes-moderador.component';
-import { DetalhesCidadaoComponent } from './dialogs/detalhes-cidadao/detalhes-cidadao.component';
-import { HeaderComponent } from './layouts/administrador/header/header.component';
-import { SidebarComponent } from './layouts/administrador/sidebar/sidebar.component';
-import { AdministradorComponent } from './layouts/administrador/administrador.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { LoginComponent } from './login/login.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SpinnerComponent,
-    AprovarDenunciaComponent,
-    DeferirDenunciaComponent,
-    DetalhesDenunciaComponent,
-    DetalhesPrefeituraComponent,
-    DetalhesCoordenadorComponent,
-    DetalhesModeradorComponent,
-    DetalhesCidadaoComponent,
-    HeaderComponent,
-    SidebarComponent,
-    AdministradorComponent
+    CadastrarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
